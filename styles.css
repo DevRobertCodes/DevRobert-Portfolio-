@@ -383,7 +383,7 @@
 
 
 #skills p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.7;
   font-weight: 500;
   padding-left: 1.5rem;
@@ -394,6 +394,33 @@
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
+
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  animation: slideIcons 6s linear infinite;
+}
+
+.skills-icons img {
+  width: 27px;
+  height: 27px;
+  opacity: 0.7;
+}
+
+/*@keyframes slideIcons {
+  0% {
+    transform: translateX(-20%);
+  }
+  50% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
+}*/
 
 
 /* ===== Desktop View ===== */
@@ -511,6 +538,10 @@
 
   .skill-title {
     font-size: 1.3rem;
+  }
+
+  .skills-icons{
+    margin-top: 2rem;
   }
 }
   /*Desktop font sizes*/
