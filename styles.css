@@ -157,7 +157,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 2.5rem 1rem;
+  padding: 5rem 1rem;
   background-color: var(--bg-color);
   color: var(--text-color);
   animation: fadeInUp 1s ease-out;
