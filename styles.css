@@ -113,7 +113,9 @@
 
 /* ===== Navigation Links ===== */
 .nav-links {
-  display: none;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
   flex-direction: column;
   gap: 1.2rem;
   background: var(--bg-color);
@@ -125,12 +127,14 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1.5rem 2rem;
   border-radius: 0 0 1rem 0;
-  transition: all 0.3s ease;
-  animation: fadeInUp 1s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
 }
 
 .nav-links.nav-open {
-  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .nav-link {
@@ -144,6 +148,7 @@
 .nav-link:hover {
   color: var(--primary-color);
 }
+
 
 /* ===== Menu Toggle for Mobile ===== */
 .menu-toggle {

@@ -1,14 +1,15 @@
 const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.getElementById('nav-links');
-
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('nav-open');
-
-       // Swap the symbol inside the toggle
-  if (menuToggle.textContent === '✖') {
-    menuToggle.textContent = '☰'; // Hamburger icon for opening
-  } else {
-    menuToggle.textContent = '✖'; // Close icon when menu is open
+const navLinks = document.getElementById('nav-links');
+// Select all nav-link anchors
+const navLinkItems = document.querySelector('.nav-link');
+// Event listener for Toggle menu
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('nav-open')
+  // Swap the symbol inside the toggle menu when clicked,
+  if (menuToggle.textContent === 'X'){
+    menuToggle.textContent = '☰'; // Hamburger Icon
+  }else {
+    menuToggle.textContent = 'X' // Cancel Icon
   };
-  });
+});
 
