@@ -23,3 +23,19 @@ navLinks.classList.remove('nav-open');
 menuToggle.textContent = '☰';
 });
 });
+
+// Intersection Observer for sections.
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, {
+    threshold: 0.2 // Trigger when 20% of the section is visible
+  });
+
+  // Observe all elements with the 'hidden' class
+  document.querySelectorAll('.hidden').forEach(el => {
+    observer.observe(el);
+  });
