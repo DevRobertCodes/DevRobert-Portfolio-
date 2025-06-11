@@ -1,41 +1,23 @@
 const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
-// Select all nav-link anchors
-const navLinkItems = document.querySelectorAll('.nav-link');
+const hamburgerIcon = document.getElementById('hamburgerIcon');
+const cancelIcon = document.getElementById('cancelIcon');
+const navLinkItems = document.querySelectorAll('.nav-links a'); // Adjust to your real selector
+const navLinks = document.querySelector('.nav-links'); // Adjust to your real class
 
 menuToggle.addEventListener('click', () => {
-navLinks.classList.toggle('nav-open');
+  navLinks.classList.toggle('nav-open');
 
-// Swap the symbol inside the toggle
-if (menuToggle.textContent === '✖') {
-menuToggle.textContent = '☰'; // Hamburger icon for opening
-} else {
-menuToggle.textContent = '✖'; // Close icon when menu is open
-};
+  // Toggle icons
+  const isOpen = navLinks.classList.contains('nav-open');
+  hamburgerIcon.classList.toggle('hidden', isOpen);
+  cancelIcon.classList.toggle('hidden', !isOpen);
 });
 
 // Loop through each and add click event
 navLinkItems.forEach(link => {
-link.addEventListener('click', () => {
-// Close the nav menu
-navLinks.classList.remove('nav-open');
-// Change the toggle icon back to ☰
-menuToggle.textContent = '☰';
-});
-});
-
-// Intersection Observer for sections.
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      }
-    });
-  }, {
-    threshold: 0.2 // Trigger when 20% of the section is visible
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('nav-open');
+    hamburgerIcon.classList.remove('hidden');
+    cancelIcon.classList.add('hidden');
   });
-
-  // Observe all elements with the 'hidden' class
-  document.querySelectorAll('.hidden').forEach(el => {
-    observer.observe(el);
-  });
+});

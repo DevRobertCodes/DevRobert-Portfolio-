@@ -17,16 +17,35 @@
 <body>
   <header class="header">
     <div class="logo">
-      <span class="dev">Dev</span>Robert
+      <img src="code-svgrepo-com.svg" 
+      alt="Robert Logo" 
+      class="logo-image" 
+      width="30"
+      height="30"/>
+      <span class="logo-text">Dev Robert</span>
     </div>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <!--Menu Toggle Image(Hamburger/close Toggle)-->
+   <div class="menu-toggle" id="menu-toggle">
+     <img src="hamburger-menu-svgrepo-com.svg" 
+     alt="Open Menu" 
+     id="hamburgerIcon"
+     width="26"
+     height="28" />
+
+     <img src="cancel-svgrepo-com.svg" 
+     alt="Close Menu"
+     id="cancelIcon"
+     class="hidden"
+     width="26"
+     height="28"/>
+   </div>
 
     <nav class="nav-links" id="nav-links">
       <a href="#hero" class="nav-link">Home</a>
       <a href="#about" class="nav-link">About</a>
       <a href="#skills" class="nav-link">Skills</a>
       <a href="#portfolio" class="nav-link">Portfolio</a>
-      <a href="#connect" class="nav-link">Contact</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </nav>
   </header>
 
@@ -69,72 +88,77 @@
   <div class="divider"></div>
 
 <section id="about" class="hidden">
-  <h2 class="section-title">Behind the Code</h2>
-  <p class="about-text">
-    I’m Robert, an 18-year-old Nigerian–Liberian web developer driven by purpose, guided by passion, 
-    and grounded in an unshakable faith in God.
-  </p>
-  <p class="about-text">
-    I enjoy building user-friendly, scalable frontend interfaces that not only look good but 
-    <em>feels right!</em>.
-  </p>
-  <p class="about-text">
-    My journey began with a spark of curiosity and a simple smartphone. What started as exploring lines of code has 
-    evolved into a mission—crafting clean, responsive websites with meaning, usability, and soul.
-  </p>
-  <p class="about-text">
-    As a self-taught developer, I thrive on continuous learning, thoughtful design, and building with intentionality. 
-    I believe tech isn’t just a tool—<em>it’s a calling</em>. Through every line of code, I aim to serve, inspire, and uplift. 
-    Whether it's through elegant UI, interactive experiences, or words of encouragement, my goal is to bring light into 
-    the digital space—<em>one project at a time</em>.
-  </p>
+    <div class="container">
+      <h2 class="section-title">Behind the Code</h2>
+        <p class="about-text">
+          I’m Robert, an 18-year-old Nigerian–Liberian web developer driven by purpose, guided by passion, 
+          and grounded in an unshakable faith in God.
+        </p>
+         <p class="about-text">
+           I enjoy building user-friendly, scalable frontend interfaces that not only look good but 
+           <em>feels right!</em>.
+        </p>
+        <p class="about-text">
+          My journey began with a spark of curiosity and a simple smartphone. What started as exploring lines of code has 
+          evolved into a mission—crafting clean, responsive websites with meaning, usability, and soul.
+        </p>
+        <p class="about-text">
+          As a self-taught developer, I thrive on continuous learning, thoughtful design, and building with intentionality. 
+          I believe tech isn’t just a tool—<em>it’s a calling</em>. Through every line of code, I aim to serve, inspire, and uplift. 
+          Whether it's through elegant UI, interactive experiences, or words of encouragement, my goal is to bring light into 
+          the digital space—<em>one project at a time</em>.
+        </p>
+    </div>
 </section>
 
-<section id="skills" class="hidden">
+<section id="skills">
+  <div class="container">
     <h2 class="section-title">My Craft</h2>
     <div class="skills-wrapper">
       <div class="frontend">
         <img src="browser-coding-svgrepo-com.svg" alt="Coding icon" class="section-icon" />
-        <h3>Frontend Development</h3>
-        <p>
-          I love the challenge of starting from a blank page and transforming ideas into engaging, interactive websites. 
-          From simple landing pages to functional web applications, I find joy in writing clean, efficient code that 
-          solves problems and creates meaningful experiences in the browser.
-        </p>
-        <h4 class="sub-heading">Code Fluency:</h4>
+    <h3>Frontend Development</h3>
+      <p>
+         I love the challenge of starting from a blank page and transforming ideas into engaging, interactive websites. 
+         From simple landing pages to functional web applications, I find joy in writing clean, efficient code that 
+         solves problems and creates meaningful experiences in the browser.
+      </p>
+    <h4 class="sub-heading">Code Fluency:</h4>
         <p>HTML</p>
         <p>CSS</p>
         <p>JavaScript</p>        
-        <div class="skills-icons">
-          <img src="icons8-html5.svg" alt="HTML icon" />
-          <img src="icons8-css3.svg" alt="CSS icon" />
-          <img src="icons8-javascript.svg" alt="JavaScript icon" />
-        </div>
-        <h4 class="sub-heading">Development Tools:</h4>
+    <div class="skills-icons">
+      <img src="icons8-html5.svg" alt="HTML icon" />
+      <img src="icons8-css3.svg" alt="CSS icon" />
+      <img src="icons8-javascript.svg" alt="JavaScript icon" />
+    </div>
+    <h4 class="sub-heading">Development Tools:</h4>
         <p>&#10003; VS Code</p>
         <p>&#10003; Github</p>
         <p>&#10003; CodePen</p>
-      </div>
+    </div>
 
-      <div class="designer">
-        <img src="web-ui-svgrepo-com.svg" alt="Web design icon" class="section-icon" />
-        <h3>Web Design</h3>
-          <p>
-            I bring design to life through thoughtful code. My focus is on creating layouts that are intuitive, 
-            responsive, and easy to navigate. With a solid grasp of design fundamentals and hands-on frontend experience,
-            I aim to ensure that every visual element enhances the user’s journey.
-          </p>
-        <h4 class="sub-heading">What I focus on:</h4>
-          <p>Responsive Layouts, Accessibility, Clean UX</p>
+    <div class="designer">
+      <img src="web-ui-svgrepo-com.svg" alt="Web design icon" class="section-icon" />
+      <h3>Web Design</h3>
+        <p>
+          I bring design to life through thoughtful code. My focus is on creating layouts that are intuitive, 
+          responsive, and easy to navigate. With a solid grasp of design fundamentals and hands-on frontend experience,
+          I aim to ensure that every visual element enhances the user’s journey.
+        </p>
+       <h4 class="sub-heading">What I focus on:</h4>
+         <p>Responsive Layouts, Accessibility, Clean UX</p>
         <h4 class="sub-heading">Credentials:</h4>
-          <p>Certified in Responsive Web Design (freeCodeCamp)</p>
+         <p>Certified in Responsive Web Design (freeCodeCamp)</p>
         <h4 class="sub-heading">Design Tools:</h4>
             <p>&#10003; Pen & Paper (for wireframing)</p>
             <p>&#10003; Code-first tools like HTML & CSS</p>
-      </div>
+     </div>
+    </div>
+   </div>
   </section>
  
-<section id="portfolio" class="hidden">
+<section id="portfolio">
   <div class="container">
     <h2 class="section-title">My Creations</h2>
     <div class="projects-grid">
@@ -198,25 +222,52 @@
   </div>
 </section>
 
-  <!--
-  <section id="connect">
-    <div class="connect">
-      <h2 class="section-title">Let’s Connect!</h2>
-      <p>Have an idea or project in mind? I’d love to collaborate and create something great together.</p>
-      <a href="https://codepen.io/TheWebNova/full/yyLdNvp" class="btn">
-        <img src="https://cdn.jsdelivr.net/gh/feathericons/feather@4.28.0/icons/mail.svg" alt="Mail icon" width="20" height="20" style="vertical-align: middle; margin-right: 8px;" />
-        Get in Touch
-      </a>
-    </div>
-  </section>
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-description">
+      Have a project in mind, want to collaborate? Feel free to reach out! I'm always open to discussing new ideas, projects, or opportunities. Let's create something amazing together.
+    </p>
+    
+    <div class="contact-content">
+      <div class="connect-with-me">
+        <h3>Connect with Me</h3>
+        <div class="social-icons">
+          <a href="#" class="social-icon"><img src="path-to-twitter-icon.svg" alt="Twitter"></a>
+          <a href="#" class="social-icon"><img src="path-to-github-icon.svg" alt="GitHub"></a>
+          <a href="#" class="social-icon"><img src="path-to-linkedin-icon.svg" alt="LinkedIn"></a>
+        </div>
+        <p>
+          I'm currently exploring new opportunities and would love to hear from you. Whether you have a project in mind, want to collaborate, or just want to say hello, I'll make sure to get back to you!
+        </p>
+        <p>
+          Based in Lagos, Nigeria, but available for remote work worldwide.
+        </p>
+      </div>
 
-  <footer>
-    <div class="footer-content">
-      <p class="footer-motivation">"Staying curious, learning, leveling up every day."</p>
-      <div class="social-links">
-        <!-- Add social links here if needed -->
+      <div class="contact-form">
+        <h3>Send Me a Message</h3>
+        <form action="submit-form.php" method="POST">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required>
+          
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Let me know how I can help you" required>
+          
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Hi, I'd like to talk about..." required></textarea>
+          
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
       </div>
     </div>
+  </div>
+</section>
+
+  <footer>
   </footer>
   <script src="script.js"></script>
 </body>
